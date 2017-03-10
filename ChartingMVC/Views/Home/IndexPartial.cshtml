@@ -1,0 +1,21 @@
+﻿@model Mvc.RazorTools.Charts.App_Start
+
+
+<div>
+    @{
+
+    var myChart = new Chart(width: 600, height: 400)
+    .AddTitle("Goal Achievement")
+    .AddSeries(
+        name: "Brian",
+        xValue: new[] { "March", "April", "May", "June", "July" },
+        yValues: new[] { "0", ".2", "0.7", ".8", "1" },
+        chartType: "3",
+        axisLabel: "Fraction of Goal")
+
+
+    .Write();
+
+
+}
+</div>
