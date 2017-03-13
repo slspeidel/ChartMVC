@@ -9,9 +9,10 @@ namespace ChartingMVC
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int Age { get; set; }
-        public int ReadingLevel { get; set; }
-        public int WritingLevel { get; set; }
-        public int MathLevel { get; set; }
+        public string[] GoalLevels { get; set; }
+        public string[] GoalDates { get; set; }
+        public string[] NeedDescriptions {get; set; }
+        public string StudentWholeName { get; set; }
+        public string[] NeedTypeNames { get; set; }
     }
 }
